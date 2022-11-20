@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: State Machine Demo
+  datasource:
+    url: jdbc:h2:mem:statemachine
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
+  h2:
+    console.enabled: true
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: 'create-drop'
