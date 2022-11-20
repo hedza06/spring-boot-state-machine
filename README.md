@@ -9,6 +9,17 @@ It is much easier to define high level logic outside of your application and the
 manage state. You can interact with the state machine by sending an event, listening for changes or simply 
 request a current state.
 
+The State Machine can be used in Saga orchestration pattern which is useful for brownfield microservice application 
+development architecture. In other words, this pattern works when we already have a set of microservices and would 
+like to implement the Saga pattern in the application. We need to define the appropriate compensating transactions to 
+proceed with this pattern.
+
+Here are a few frameworks available to implement the orchestrator pattern:
+
+* **Camunda:** a Java-based framework that supports Business Process Model and Notation (BPMN) standard for workflow 
+and process automation.
+* **Apache Camel:** provides the implementation for Saga Enterprise Integration Pattern (EIP)
+
 
 ### State Machine Terminology
 
